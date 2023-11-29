@@ -1,8 +1,8 @@
 package com.example.RestAPI;
 
 public class Calculator {
-    public int sum(int a, int c){
-        return a + c;
+    public int sum(int a, int d){
+        return a + d;
     }
 
     public static void main(String[] args){
