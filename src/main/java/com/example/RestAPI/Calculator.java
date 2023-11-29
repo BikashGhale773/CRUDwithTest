@@ -9,6 +9,6 @@ public class Calculator {
 //        Calculator calc = new Calculator();
 //        calc.sum(2,2);
 
-        System.out.println("Hello World");
+        System.out.println("Hello");
     }
 }
