@@ -11,4 +11,7 @@ public interface PersonService {
 
     public Person getById(int id);
     public void deletePerson(int id);
+
+    public Person updatePerson(Person person);
+
 }
