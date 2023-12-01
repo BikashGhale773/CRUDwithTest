@@ -36,4 +36,16 @@ public class PersonController {
         personService.deletePerson(id);
         return "deleted successfully";
     }
+
+    @PostMapping("/persons/{id}")
+    public Person updatePerson(@PathVariable("id") int id, @RequestBody Person person){
+        //get Person from database
+        Person updatePerson = personService.getById(id);
+        updatePerson.setAge(id);
+        updatePerson.setAge(person.getAge());
+        updatePerson.setName(person.getName());
+        updatePerson.setAddress(person.getAddress());
+        updatePerson.setSubject(person.getSubject());
+        return personService.updatePerson(updatePerson);
+    }
 }
